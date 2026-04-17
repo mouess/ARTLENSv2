@@ -1,0 +1,111 @@
+.creative {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding-top: 70px;
+}
+
+.creative__bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(10, 10, 10, 0.2) 40%,
+    rgba(10, 10, 10, 0.1) 100%
+  );
+  z-index: 1;
+}
+
+.creative__image-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+}
+
+.creative__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  filter: brightness(0.6);
+}
+
+.creative__img-fade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(to top, var(--black), transparent);
+}
+
+.creative__content {
+  position: relative;
+  z-index: 2;
+  padding: 60px 40px;
+  max-width: 600px;
+  animation: fadeUp 1s ease both;
+}
+
+.creative__frame {
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-bottom: 12px;
+}
+
+.creative__headline {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3.5rem, 9vw, 6rem);
+  line-height: 0.95;
+  letter-spacing: 2px;
+  color: var(--white);
+  margin-bottom: 32px;
+}
+
+.creative__highlight {
+  color: var(--red);
+}
+
+.creative__btn {
+  display: inline-block;
+  background: var(--red);
+  color: var(--white);
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  padding: 12px 28px;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.creative__btn:hover {
+  background: var(--dark-red);
+  transform: translateY(-2px);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .creative {
+    min-height: 85vh;
+    align-items: center;
+  }
+
+  .creative__content {
+    padding: 40px 20px;
+  }
+
+  .creative__bg-overlay {
+    background: rgba(10, 10, 10, 0.1);
+  }
+}

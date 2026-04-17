@@ -1,0 +1,85 @@
+.services {
+  padding: var(--section-pad);
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* TITLE */
+.section-title {
+  text-align: center;
+  color: var(--white);
+  font-size: 2rem;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+/* red lines like your image */
+.section-title::before,
+.section-title::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 80px;
+  height: 2px;
+  background: var(--red);
+}
+
+.section-title::before {
+  left: 30%;
+}
+
+.section-title::after {
+  right: 30%;
+}
+
+/* GRID */
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  text-align: center;
+}
+
+/* CARD (transparent) */
+.services__card {
+  padding: 36px 28px;
+  transition: transform 0.3s ease;
+}
+
+/* HOVER */
+.services__card:hover {
+  transform: translateY(-6px);
+}
+
+/* ICON */
+.services__icon {
+  font-size: 5rem;
+  margin-bottom: 18px;
+}
+
+/* TITLE */
+.services__name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+
+/* DESC */
+.services__desc {
+  color: var(--gray);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .services__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title::before,
+  .section-title::after {
+    display: none;
+  }
+}

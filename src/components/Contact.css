@@ -1,0 +1,126 @@
+.contact {
+  padding: var(--section-pad);
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 48px;
+  background: rgba(255, 0, 0, 0.5);
+}
+
+.contact__inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.contact__left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact__tagline {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--white);
+  line-height: 1.4;
+}
+
+.contact__socials {
+  display: flex;
+  gap: 12px;
+}
+
+.contact__social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: var(--gray);
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.contact__social:hover {
+  border-color: var(--red);
+  color: var(--white);
+}
+
+.contact__copy {
+  font-size: 0.7rem;
+  color: #e4e4e4;
+  letter-spacing: 0.5px;
+}
+
+/* Info card */
+.contact__card {
+  background: var(--dark);
+  border-radius: 15px;
+  padding: 32px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 260px;
+  border: 1px solid #222;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact__card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--red);
+}
+
+.contact__row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.contact__icon {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.contact__link {
+  color: var(--light-gray);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.contact__link:hover {
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .contact__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .contact__card {
+    width: 100%;
+  }
+}
