@@ -12,9 +12,9 @@ export default function Contact() {
             On Our Social Platforms
           </p>
           <div className="contact__socials">
-            <a href="https://www.linkedin.com/company/artlens-ma/" target='_blank' aria-label="Facebook" className="contact__social">In</a>
-            <a href="https://www.instagram.com/artlens.ma/" target='_blank' aria-label="Instagram" className="contact__social">ig</a>
-            <a href="https://www.facebook.com/artlens.ma/" target='_blank' aria-label="YouTube" className="contact__social">f</a>
+            <a href="https://www.linkedin.com/company/artlens-ma/" target='_blank' rel="noreferrer" aria-label="Facebook" className="contact__social">In</a>
+            <a href="https://www.instagram.com/artlens.ma/" target='_blank' rel="noreferrer" aria-label="Instagram" className="contact__social">ig</a>
+            <a href="https://www.facebook.com/artlens.ma/" target='_blank' rel="noreferrer" aria-label="YouTube" className="contact__social">f</a>
           </div>
           <p className="contact__copy">
             ARTLENS · Tous droits réservés · artlens.ma

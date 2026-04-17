@@ -20,7 +20,7 @@ export default function Creative() {
           Creative<br />
           <span className="creative__highlight">Visual</span> Agency
         </h1>
-        <a href="https://wa.me/212668927612" target='_blank' className="creative__btn">Contact Us</a>
+        <a href="https://wa.me/212668927612" target='_blank' rel="noreferrer" className="creative__btn">Contact Us</a>
       </div>
     </section>
   );
