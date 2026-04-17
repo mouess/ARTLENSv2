@@ -1,6 +1,8 @@
 .creative {
   position: relative;
   min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
@@ -11,9 +13,9 @@
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    120deg,
-    rgba(10, 10, 10, 0.2) 40%,
-    rgba(10, 10, 10, 0.1) 100%
+    80deg,
+    rgba(10, 10, 10, 0.7) 10%,
+    rgba(10, 10, 10, 0) 100%
   );
   z-index: 1;
 }
@@ -23,6 +25,7 @@
   inset: 0;
   z-index: 0;
   width: 100%;
+  padding-top: 110px;
 }
 
 .creative__img {
@@ -30,7 +33,8 @@
   height: 100%;
   object-fit: cover;
   object-position: center top;
-  filter: brightness(0.6);
+  filter: brightness(1);
+  border-radius: 30px;
 }
 
 .creative__img-fade {
@@ -46,7 +50,7 @@
   position: relative;
   z-index: 2;
   padding: 60px 40px;
-  max-width: 600px;
+  max-width: 100%;
   animation: fadeUp 1s ease both;
 }
 

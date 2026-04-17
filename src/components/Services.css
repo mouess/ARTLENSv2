@@ -2,6 +2,7 @@
   padding: var(--section-pad);
   padding-left: 40px;
   padding-right: 40px;
+  width: 100%;
 }
 
 /* TITLE */

@@ -20,6 +20,9 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -27,6 +30,8 @@ body {
   color: var(--white);
   font-family: 'Barlow', sans-serif;
   overflow-x: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 .app {
@@ -61,6 +66,6 @@ body {
 @media (max-width: 768px) {
   .section-title::before,
   .section-title::after {
-    width: 30px;
+    width: 20px;
   }
 }

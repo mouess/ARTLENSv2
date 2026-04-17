@@ -5,7 +5,6 @@ export default function Creative() {
     <section className="creative" id="home">
       <div className="creative__bg-overlay" />
 
-      {/* Placeholder hero image — swap src with your real image */}
       <div className="creative__image-wrap">
         <video
           src="https://res.cloudinary.com/dyfqal83h/video/upload/v1776446615/site_1_xz3ivt.mp4" 

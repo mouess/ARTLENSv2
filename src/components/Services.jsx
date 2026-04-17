@@ -22,7 +22,7 @@ export default function Services() {
 
   const sectionStyle = {
     backgroundImage:
-      "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('/services.png')",
+      "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url('/services.png')",
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
