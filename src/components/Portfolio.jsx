@@ -43,10 +43,11 @@ export default function Portfolio() {
       {/* FEATURES */}
       <div className="story__inner">
         <div className="story__img-wrap">
-          <video
-            src="/doc1.mp4" muted autoPlay loop
-            alt="Camera on set"
-          />
+          <iframe
+  src="https://player.cloudinary.com/embed/?cloud_name=dyfqal83h&public_id=doc1_mfeyuo&autoplay=true"
+  allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+  allowFullScreen
+/>
         </div>
 
         <div className="story__text">
@@ -71,10 +72,12 @@ export default function Portfolio() {
         </div>
 
         <div className="story__img-wrap">
-          <video
-            src="/doc1.mp4" muted autoPlay loop
-            alt="Camera on set"
-          />
+          <iframe
+  src="https://player.cloudinary.com/embed/?cloud_name=dyfqal83h&public_id=doc1_mfeyuo&autoplay=true"
+  allow="autoplay; fullscreen; muted; encrypted-media; picture-in-picture"
+  allowFullScreen 
+  
+/>
         </div>
       </div>
     </section>
