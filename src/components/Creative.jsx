@@ -8,7 +8,8 @@ export default function Creative() {
       {/* Placeholder hero image — swap src with your real image */}
       <div className="creative__image-wrap">
         <video
-          src="/site 1.mp4" autoPlay muted loop playsInline
+          src="https://res.cloudinary.com/dyfqal83h/video/upload/v1776446615/site_1_xz3ivt.mp4" 
+          autoPlay muted loop playsInline preload="auto"
           className="creative__img"
         />
         <div className="creative__img-fade" />
