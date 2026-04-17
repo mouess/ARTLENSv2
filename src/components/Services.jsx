@@ -39,7 +39,7 @@ export default function Services() {
       <div className="services__grid">
         {services.map((s) => (
           <div className="services__card" key={s.title}>
-            <img className="services__icon" src={s.src} alt="service image" width={'80px'}/>
+            <img className="services__icon" src={s.src} alt="content creation" width={'80px'}/>
             <h3 className="services__name">{s.title}</h3>
             <p className="services__desc">{s.desc}</p>
           </div>
