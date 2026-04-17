@@ -2,15 +2,15 @@ import { useState } from "react";
 import "./Portfolio.css";
 
 const galleryVideos = [
-  "/portfolio/portfolio 1.mp4",
-  "/portfolio/portfolio 2.mp4",
-  "/portfolio/portfolio 3.mp4",
-  "/portfolio/portfolio 4.mp4",
-  "/portfolio/portfolio 5.mp4",
-  "/portfolio/portfolio 6.mp4",
-  "/portfolio/portfolio 7.mp4",
-  "/portfolio/portfolio 8.mp4",
-  "/portfolio/portfolio 9.mp4",
+  "https://res.cloudinary.com/dyfqal83h/video/upload/v1776404376/portfolio_1_es57uh.mp4",
+  "https://res.cloudinary.com/dyfqal83h/video/upload/v1776404380/portfolio_2_thc0t6.mp4",
+  "https://res.cloudinary.com/dyfqal83h/video/upload/v1776404387/portfolio_3_tv5amc.mp4",
+  "https://res.cloudinary.com/dyfqal83h/video/upload/v1776404397/portfolio_4_ugejqm.mp4",
+  "https://res.cloudinary.com/dyfqal83h/video/upload/v1776404388/portfolio_5_y3da91.mp4",
+  "https://res.cloudinary.com/dyfqal83h/video/upload/v1776404390/portfolio_6_ga7l1f.mp4",
+  "https://res.cloudinary.com/dyfqal83h/video/upload/v1776404376/portfolio_7_b0sde6.mp4",
+  "https://res.cloudinary.com/dyfqal83h/video/upload/v1776404383/portfolio_8_svzhq8.mp4",
+  "https://res.cloudinary.com/dyfqal83h/video/upload/v1776404393/portfolio_9_ouklaj.mp4",
 ];
 
 export default function Portfolio() {
@@ -43,11 +43,13 @@ export default function Portfolio() {
       {/* FEATURES */}
       <div className="story__inner">
         <div className="story__img-wrap">
-          <iframe
-  src="https://player.cloudinary.com/embed/?cloud_name=dyfqal83h&public_id=doc1_mfeyuo&autoplay=true"
-  allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
-  allowFullScreen
-/>
+          <video
+    src="https://res.cloudinary.com/dyfqal83h/video/upload/v1776402529/doc1_mfeyuo.mp4"
+    muted
+    autoPlay
+    loop
+    playsInline
+  />
         </div>
 
         <div className="story__text">
@@ -72,12 +74,13 @@ export default function Portfolio() {
         </div>
 
         <div className="story__img-wrap">
-          <iframe
-  src="https://player.cloudinary.com/embed/?cloud_name=dyfqal83h&public_id=doc1_mfeyuo&autoplay=true"
-  allow="autoplay; fullscreen; muted; encrypted-media; picture-in-picture"
-  allowFullScreen 
-  
-/>
+          <video
+    src="https://res.cloudinary.com/dyfqal83h/video/upload/v1776402529/doc1_mfeyuo.mp4"
+    muted
+    autoPlay
+    loop
+    playsInline
+  />
         </div>
       </div>
     </section>
