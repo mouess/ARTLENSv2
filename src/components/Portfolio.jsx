@@ -75,7 +75,7 @@ export default function Portfolio() {
 
         <div className="story__img-wrap">
           <video
-    src="https://res.cloudinary.com/dyfqal83h/video/upload/v1776402529/doc1_mfeyuo.mp4"
+    src="https://res.cloudinary.com/dyfqal83h/video/upload/v1776472063/doc_2_uhdenv.mp4"
     muted
     autoPlay
     loop

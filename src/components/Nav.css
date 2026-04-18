@@ -21,13 +21,8 @@
   border-bottom: 1px solid rgba(227, 28, 28, 0.2);
 }
 
-.nav__logo {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.6rem;
-  letter-spacing: 3px;
-  color: var(--white);
-  text-decoration: none;
-  transition: color 0.2s;
+.nav__logo img{
+  height: 30px;
 }
 
 .nav__logo:hover { color: var(--red); }
@@ -91,6 +86,11 @@
 @media (max-width: 768px) {
   .nav {
     padding: 16px 20px;
+  }
+
+  .nav__logo img{
+    transition: color 0.2s;
+    height: 25px;
   }
 
   .nav__burger {

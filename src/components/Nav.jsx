@@ -13,7 +13,7 @@ export default function Nav() {
 
   return (
     <nav className={`nav ${scrolled ? 'nav--scrolled' : ''}`}>
-      <a href="#home" className="nav__logo">artlens</a>
+      <a href="#home" className="nav__logo"><img src='https://res.cloudinary.com/dyfqal83h/image/upload/v1776471631/Layer_1-3_fwkqfv.png' alt='logo'/></a>
 
       <button
         className={`nav__burger ${menuOpen ? 'open' : ''}`}

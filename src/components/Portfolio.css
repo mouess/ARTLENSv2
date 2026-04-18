@@ -18,7 +18,7 @@
 
 .video-strip {
   display: flex;
-  gap: 12px;
+  gap: 10px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding-bottom: 10px;
@@ -37,7 +37,7 @@
 ========================= */
 
 .video-item {
-  flex: 0 0 25%; /* 4 videos visible */
+  flex: 0 0 24.1%; /* 4 videos visible */
   scroll-snap-align: start;
   cursor: pointer;
   border-radius: 10px;
@@ -182,7 +182,7 @@
 .story__img-wrap {
   position: relative;
   flex: 0 0 60%;
-  aspect-ratio: 4/3;
+  aspect-ratio: 4/2;
   overflow: hidden;
 }
 
