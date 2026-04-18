@@ -8,7 +8,6 @@ const galleryVideos = [
   "https://res.cloudinary.com/dyfqal83h/video/upload/v1776404397/portfolio_4_ugejqm.mp4",
   "https://res.cloudinary.com/dyfqal83h/video/upload/v1776404388/portfolio_5_y3da91.mp4",
   "https://res.cloudinary.com/dyfqal83h/video/upload/v1776404390/portfolio_6_ga7l1f.mp4",
-  "https://res.cloudinary.com/dyfqal83h/video/upload/v1776404376/portfolio_7_b0sde6.mp4",
   "https://res.cloudinary.com/dyfqal83h/video/upload/v1776404383/portfolio_8_svzhq8.mp4",
   "https://res.cloudinary.com/dyfqal83h/video/upload/v1776404393/portfolio_9_ouklaj.mp4",
 ];
@@ -43,7 +42,7 @@ export default function Portfolio() {
       {/* FEATURES */}
       <div className="story__inner">
         <div className="story__img-wrap">
-          <video
+          <video onClick={() => setActiveVideo("https://res.cloudinary.com/dyfqal83h/video/upload/v1776402529/doc1_mfeyuo.mp4")}
     src="https://res.cloudinary.com/dyfqal83h/video/upload/v1776402529/doc1_mfeyuo.mp4"
     muted
     autoPlay
@@ -74,7 +73,7 @@ export default function Portfolio() {
         </div>
 
         <div className="story__img-wrap">
-          <video
+          <video onClick={() => setActiveVideo("https://res.cloudinary.com/dyfqal83h/video/upload/v1776472063/doc_2_uhdenv.mp4")}
     src="https://res.cloudinary.com/dyfqal83h/video/upload/v1776472063/doc_2_uhdenv.mp4"
     muted
     autoPlay
